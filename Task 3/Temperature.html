@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Temperature Conversion Site</title>
+    <link rel="stylesheet" type="text/css" href="Temperature.css">
+    <script src="Temperature.js"></script>
+
+</head>
+<body>
+    <header>
+        <H1>Temperature Conversion Site</H1>
+        <p>For Oasis InfoByte Web Development and Designing Internship<br>
+            ~Developed by Ishika Bhattacharya 
+        </p>
+          
+    </header>
+    <div class="OIB">
+        <label class ="lab1" for="temp">Enter the Temperature</label>
+        <label class ="lab2" for="temp">in: </label>
+       
+        <input class ="rad" id="cel" name="rdbt" type="radio" checked="checked" onclick="check()">
+        <label class="lab" for="cel">Celsius</label>
+        <input class="rad" id="far" name="rdbt" type="radio" onclick="check()">
+        <label class="lab" for="far">Fahrenheit</label>
+        <input class="rad" id="kel" name="rdbt" type="radio" onclick="check()">
+        <label class="lab" for="kel">Kelvin</label>
+        <br><br>
+        <input type="text" id="temp">
+        <br><br>
+        <label class ="lab1">Select the unit you want to convert to: </label>
+        <input class ="rad" id="cel1" name="rdbt1" type="radio" disabled>
+        <label class="lab" for="cel1">Celsius</label>
+        <input class="rad" id="far1" name="rdbt1" type="radio" checked="checked">
+        <label class="lab" for="far1">Fahrenheit</label>
+        <input class="rad" id="kel1" name="rdbt1" type="radio">
+        <label class="lab" for="kel1">Kelvin</label>
+        <br><br>
+        <button class="btn" onclick="convert()">Convert</button>
+        <br><br>
+        <label class ="lab1">The converted temperature from </label>
+        <label class ="lab2" id="lab2">Celsius</label>
+        <label class ="lab2">to</label>
+        <label class ="lab2" id="lab3">Fahrenheit</label>
+        <label class ="lab2">is: </label>
+        <br>
+        <input type="text" id="value" disabled>
+
+    </div>
+</body>
+</html>
